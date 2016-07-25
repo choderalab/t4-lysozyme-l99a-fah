@@ -47,7 +47,7 @@ pH = 7.4 # pH to model
 keep_crystallographic_water = False # keep crystallographic waters?
 
 # Single point mutants
-point_mutants = ['Q185C', 'Q185L','Q185M','Q185N']
+# point_mutants = ['Q185C', 'Q185L','Q185M','Q185N']
 
 # Forcefield
 ff_name = 'amber99sbildn'
@@ -57,7 +57,7 @@ solvate = True # if True, will add water molecules using simtk.openm.app.modelle
 padding = 11.0 * unit.angstroms
 nonbonded_cutoff = 9.0 * unit.angstroms
 nonbonded_method = app.PME
-max_minimization_iterations = 5000
+max_minimization_iterations = 10000 # Increased from 5000, to solve minimization problem.
 temperature = 300.0 * unit.kelvin
 pressure = 1.0 * unit.atmospheres
 collision_rate = 5.0 / unit.picoseconds

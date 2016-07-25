@@ -8,7 +8,7 @@
 
 ## Description
 
-This project sets up initial structures of T4 lysozyme L99A for simulation on Folding@home to construct Markov state models.
+This project sets up initial structures of T4 lysozyme L99A apo protein for simulation on Folding@home to construct Markov state models.
 
 Initial structures:
 * `4W51`                                    (L99A mutant without ligands present)
