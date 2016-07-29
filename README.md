@@ -29,8 +29,12 @@ Modeling of templates must use openmm >=7.0.1
 conda install --yes openmm>=7.0.1 mdtraj pdbfixer
 python setup_initial_structures.py
 ```
-Repackaging for Folding@home must use openmm 6.3
+Test that this works with OpenMM 6.2 (which Folding@home core 21 v0.0.17 is built on)
 ```bash
-conda install --yes openmm==6.3
-python package_for_fah.py
+conda install --yes openmm==6.2
+python test_resume.py
 ```
+Don't forget to go back to a recent version of `openmm` afterwards!
+
+You may want to use `conda env` to create conda environments for OpenMM 6.2 and 7.0.1 to simplify things!
+http://conda.pydata.org/docs/using/envs.html
